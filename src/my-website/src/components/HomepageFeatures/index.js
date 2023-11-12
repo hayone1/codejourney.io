@@ -4,17 +4,12 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Very Easy to Use',
+    title: 'Really Easy to Use',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
+        Lorem Docusaurus was designed from the ground up to be easily installed and
         used to get your website up and running quickly.
-      </>
-    ),
-    description_2: (
-      <>
-        Lorem Loren docs
       </>
     ),
   },
@@ -27,11 +22,6 @@ const FeatureList = [
         ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
-    description_2: (
-      <>
-        Lorem Loren docs
-      </>
-    ),
   },
   {
     title: 'Powered by React',
@@ -42,15 +32,10 @@ const FeatureList = [
         be extended while reusing the same header and footer.
       </>
     ),
-    description_2: (
-      <>
-        Lorem Loren docs
-      </>
-    ),
   },
 ];
 
-function Feature({Svg, title, description, description_2}) {
+function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -59,7 +44,6 @@ function Feature({Svg, title, description, description_2}) {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
-        <mark>{description_2}</mark>
       </div>
     </div>
   );
